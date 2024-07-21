@@ -1,7 +1,7 @@
 # promVisualizer
 
 ## Objective
-Exploring different ways to visualise Prometheus Queries in ReactJS
+A self-service onboarding platform for visualising Prometheus Queries
 
 ## Summary of App
 - A react app for onboarding prometheus queries and displays visualisations in a global dashboard.
