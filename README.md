@@ -18,5 +18,6 @@ A self-service onboarding platform for managing Prometheus Queries and other met
 ## Future Work
 - Healthchecks
 - Exporter Metadata
+- Configuration Management
 - Query Results Caching
 
