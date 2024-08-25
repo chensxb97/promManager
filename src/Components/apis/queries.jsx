@@ -10,7 +10,7 @@ async function getQueries() {
 async function getQuery(queryId) {
     // const db = new PocketBase('http://127.0.0.1:8090');
     // await db.records.getOne('promQueries', {
-    //   id: userId
+    //   id: queryId
     // });
     const res = await fetch(
         `http://127.0.0.1:8090/api/collections/promQueries/records/${queryId}`, { cache: 'no-store' }
@@ -23,9 +23,9 @@ async function createQuery(payload) {
     // const db = new PocketBase('http://127.0.0.1:8090');
     // await db.records.create('notes', {
     // query,
-    // interval
+    // description
     // });
-    const { query, interval } = payload
+    const { query, description } = payload
     await fetch('http://127.0.0.1:8090/api/collections/promQueries/records', {
         method: 'POST',
         headers: {
@@ -33,7 +33,7 @@ async function createQuery(payload) {
         },
         body: JSON.stringify({
             query,
-            interval
+            description
         }),
     });
 }
@@ -41,11 +41,11 @@ async function createQuery(payload) {
 async function editQuery(payload) {
     // const db = new PocketBase('http://127.0.0.1:8090');
     // await db.records.update('promQueries', {
-    // id:queryId,
+    // id: queryId,
     // query,
-    // interval
+    // description
     // });
-    const { queryId, query, interval } = payload
+    const { queryId, query, description } = payload
     await fetch(`http://127.0.0.1:8090/api/collections/promQueries/records/${queryId}`, {
         method: 'PATCH',
         headers: {
@@ -53,7 +53,7 @@ async function editQuery(payload) {
         },
         body: JSON.stringify({
             query,
-            interval
+            description
         }),
     })
 }
