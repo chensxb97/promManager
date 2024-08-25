@@ -1,7 +1,7 @@
-# promVisualizer
+# Prometheus Onboarding Manager
 
 ## Objective
-A self-service onboarding platform for visualising Prometheus Queries
+A self-service onboarding platform for managing Prometheus Queries and other metadata. The idea is to create a user interface that offers Prometheus functionality and customisation for third-party users, without having to make direct and high-risk modifications to the Prometheus configurations.
 
 ## Summary of App
 - A react app for onboarding prometheus queries and displays visualisations in a global dashboard.
@@ -14,3 +14,9 @@ A self-service onboarding platform for visualising Prometheus Queries
   - Edit existing prometheus queries
   - Delete existing prometheus queries
   - Clone existing prometheus queries
+
+## Future Work
+- Healthchecks
+- Exporter Metadata
+- Query Results Caching
+
